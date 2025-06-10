@@ -1,0 +1,129 @@
+.introducao__bg {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: inset 0px -120px #ffffff;
+}
+
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 2.5rem;
+
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introducao__conteudo {
+    align-self: end;
+    padding-bottom: 12.5rem;
+}
+
+.introducao img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.introducao__conteudo h1 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    line-height: 1.125;
+}
+
+.introducao__conteudo h1 span {
+    color: #ffbb00;
+}
+
+.introducao__conteudo p {
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #b2b2b2;
+}
+
+.introducao a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    color: #332200;
+    font-size: 1.125rem;
+    line-height: 1.33;
+    font-weight: bold;
+}
+
+.introducao a:hover {
+    background: linear-gradient(#ffb60d, #e59317);
+
+}
+
+@media (max-width: 1200px) {
+    .introducao h1 {
+        font-size: 3rem;
+    }
+
+    .introducao p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .introducao__bg {
+        background-color: #111111;
+        padding-top: 2.5rem;
+        box-shadow: inset 0 -60px #ffffff;
+    }
+    .introducao {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .introducao__conteudo {
+        padding-bottom: 0px;
+    }
+    .introducao h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .introducao img {
+        height: 300px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .introducao a {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+
+/*
+
+
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+32px = 2rem
+40px = 2.5rem
+48px = 3rem
+64px = 4rem
+80px = 5rem
+200px = 12.5rem
+
+TAMANHO DE LINHA (LINE - HEIGHT)
+72/64 = 1.125
+36/24 = 1.5
+*/
