@@ -1,5 +1,5 @@
 .header__bg {
-    background-color: #000000;  
+    background: var(--cor-12);  
 }
 
 .header {
@@ -9,12 +9,7 @@
     gap: 1.25rem;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem;
-
-    max-width: 1200px;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 1.25rem 0 1.25rem 0;
 
 }
 
@@ -27,10 +22,9 @@
 
 .header__menu a {
     display: inline-block;
-    color: #ffffff;
     padding: 1.25rem 0px;
-    font-size: 1.125rem;
     position: relative;
+   
 }
 
 .header__menu a::after {
@@ -38,7 +32,7 @@
     display: block;
     width: 0%;
     height: 2px;
-    background-color: #ffffff;
+    background-color: var(--cor-0);
     margin-top: 4px;
     transition: 0.3s;
     position: absolute;
@@ -55,13 +49,13 @@
     }
 
     .header__menu a {
-        background-color: #111111;
+        background-color: var(--cor-11);
         padding: 0.75rem 1rem;
         border-radius: 4px;
     }
 
     .header__menu a:hover {
-        background-color: #2E2E2E;
+        background-color: var(--cor-10);
     }
     .header__menu a::after {
         display: none;
