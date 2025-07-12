@@ -1,0 +1,82 @@
+.depoimento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--cor-p1);
+    overflow: hidden;
+}
+
+.depoimento img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.depoimento .conteudo {
+    padding: 2.5rem 2.5rem 5rem 5rem;
+    align-self: flex-end;
+}
+
+.depoimento .conteudo p {
+    max-width: 32ch;
+    font-family: 'Merriweather', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.depoimento .conteudo p::before,
+.depoimento .conteudo p::after {
+    font-size: 5rem;
+    color: var(--cor-p2);
+    position: absolute;
+    
+}
+
+.depoimento .conteudo p::before {
+    content: "“";
+    left: -50px;
+    top: -20px;
+}
+
+.depoimento .conteudo p::after {
+    content: "”";
+}
+
+
+@media (max-width: 800px) {
+    .depoimento {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .depoimento img {
+        max-height: 200px;
+    }
+    .depoimento .conteudo {
+        padding: 2.5rem 1.25rem;
+        margin: auto;
+    }
+}
+
+/*
+
+
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+32px = 2rem
+40px = 2.5rem
+48px = 3rem
+64px = 4rem
+80px = 5rem
+200px = 12.5rem
+
+TAMANHO DE LINHA (LINE - HEIGHT)
+72/64 = 1.125
+36/24 = 1.5
+*/

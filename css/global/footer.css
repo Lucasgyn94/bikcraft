@@ -1,0 +1,90 @@
+.footer__bg {
+    background-color: var(--cor-12);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 3fr 5fr 4fr;
+    gap: 2.5rem;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+
+.footer h3 {
+    margin-bottom: 2rem;
+}
+
+.footer__contato ul {
+    margin-bottom: 2rem;
+}
+
+.footer__contato li:nth-child(even)::after {
+    content: "";
+    display: block;
+    max-width: 360px;
+    height: 2px;
+    background: var(--cor-11);
+    margin-top: 1rem;
+}
+
+.footer li {
+    margin-bottom: 1rem;
+}
+
+.footer__redes {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer a:hover {
+    color: var(--cor-0);
+}
+
+.footer__copy {
+    grid-column: 1 / -1;
+    margin-top: 2.5rem;
+}
+
+@media (max-width: 800px) {
+    .footer > img {
+        display: none;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 3.75rem;
+    }
+
+    .footer__copy {
+        margin-top: 0px;
+    }
+}
+
+/*
+
+8px = 0.5rem
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+32px = 2rem
+40px = 2.5rem
+48px = 3rem
+60px = 3.75rem
+64px = 4rem
+80px = 5rem
+200px = 12.5rem
+
+TAMANHO DE LINHA (LINE - HEIGHT)
+72/64 = 1.125
+36/24 = 1.5
+*/
