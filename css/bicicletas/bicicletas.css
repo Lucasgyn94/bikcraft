@@ -1,0 +1,132 @@
+.bicicletas__bg {
+    /*background: var(--cor-11) ;*/
+    background-image: linear-gradient(to right, var(--cor-0) 30%,var(--cor-11) 0);
+}
+
+.bicicletas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+
+.bicicletas__imagem {
+    display: grid;
+}
+
+.bicicletas__imagem img {
+    grid-area: 1/1;
+}
+
+.bicicletas__imagem span {
+    grid-area: 1/1;
+    place-self: start end;
+    margin-top: 1.25rem;
+    background: var(--cor-12);
+    display: inline-block;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    border-radius: 4px 0px 0px 4px;
+
+}
+
+.bicicletas__conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: flex-start;
+
+}
+
+.bicicletas h2,
+.bicicletas p {
+    grid-column: 1/-1;
+}
+
+.bicicletas h2 {
+    margin-bottom: 1.25rem;
+}
+
+.bicicletas h2::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-color: var(--cor-p1);
+    margin-bottom: 0.5rem;
+}
+
+.bicicletas p {
+    margin-bottom: 2rem;
+}
+
+.bicicletas a {
+    place-self: flex-end;
+}
+
+.bicicletas li {
+    display: flex;
+   /* flex-direction: row;*/
+    align-items: center;
+}
+
+.bicicletas ul {
+    display: grid;
+    gap: 0.5rem;
+}
+
+
+.bicicletas__conteudo img {
+    width: 24px;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 800px) {
+    .bicicletas {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .bicicletas__bg {
+        background: var(--cor-11);
+    }
+
+}
+
+@media (max-width: 600px) {
+    .bicicletas__conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .bicicletas ul {
+        font-size: 1rem;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .bicicletas a {
+        place-self: flex-start;
+    }
+}
+
+/*
+
+8px = 0.5rem
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+32px = 2rem
+40px = 2.5rem
+48px = 3rem
+60px = 3.75rem
+64px = 4rem
+80px = 5rem
+200px = 12.5rem
+
+TAMANHO DE LINHA (LINE - HEIGHT)
+72/64 = 1.125
+36/24 = 1.5
+*/

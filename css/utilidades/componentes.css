@@ -33,6 +33,27 @@
     background: var(--cor-9);
 }
 
+.botao.seta {
+    display: flex;
+    align-items: center;
+}
+
+.botao.seta::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    background: url('../../img/icones/seta.svg');
+    transition: 0.2s;
+}
+
+
+.botao.seta:hover::after {
+    transform: translateX(4px);
+}
+
+
 @media (max-width: 600px) {
     .botao {
         padding: 0.75rem 1rem;
@@ -59,3 +80,52 @@
 .link:hover {
     color: var(--cor-0);
 }
+
+/*titulos internos*/
+
+.titulo__bg {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  background-color: var(--cor-11);
+
+}
+
+.titulo p {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+    .titulo__bg {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .titulo p {
+        font-size: 1rem;
+        text-transform: lowercase;
+        font-weight: 400;
+    }
+}
+
+
+/*
+
+
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+32px = 2rem
+40px = 2.5rem
+48px = 3rem
+60px = 3.75rem
+64px = 4rem
+80px = 5rem
+200px = 12.5rem
+
+TAMANHO DE LINHA (LINE - HEIGHT)
+72/64 = 1.125
+36/24 = 1.5
+*/

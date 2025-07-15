@@ -1,0 +1,42 @@
+.termos {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.termos h2 {
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+.termos p + h2 {
+    margin-top: 2.5rem;
+}
+
+
+.termos p {
+    max-width: 75ch;
+    margin-bottom: 24px;
+}
+
+
+/*
+
+8px = 0.5rem
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+32px = 2rem
+40px = 2.5rem
+48px = 3rem
+60px = 3.75rem
+64px = 4rem
+80px = 5rem
+200px = 12.5rem
+
+TAMANHO DE LINHA (LINE - HEIGHT)
+72/64 = 1.125
+36/24 = 1.5
+*/
